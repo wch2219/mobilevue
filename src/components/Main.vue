@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span @click="show()">{{msg}}</span>
+    <span class="title" @click="show()">{{msg}}</span>
 
     <router-view></router-view>
 
@@ -22,7 +22,6 @@
         我的
       </mt-tab-item>
     </mt-tabbar>
-
   </div>
 </template>
 
@@ -47,21 +46,16 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2 {
-    font-weight: normal;
+  .title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    display: block;
+    color: #2c3e50;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
-  }
 </style>
